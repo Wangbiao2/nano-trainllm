@@ -1,0 +1,8 @@
+{"messages": [{"role": "user", "content": "什么是 padding-free？"}, {"role": "assistant", "content": "把一个 batch 的所有序列首尾相接成一条，用 cu_seqlens 划边界，从而不浪费 pad 位置的算力。"}]}
+{"messages": [{"role": "user", "content": "<image>图里主要是什么颜色？"}, {"role": "assistant", "content": "深蓝底、黄色圆形和一条红色竖条。"}], "images": ["examples/data/demo.png"]}
+{"messages": [{"role": "user", "content": "GRPO 的组大小取多少？"}, {"role": "assistant", "content": "至少 2，否则组内归一化后优势恒为 0。"}, {"role": "user", "content": "为什么？"}, {"role": "assistant", "content": "单个样本减去它自己的均值就是 0。"}]}
+{"messages": [{"role": "user", "content": "为什么不能直接用 model(...).logits 算 loss？"}, {"role": "assistant", "content": "词表约 25 万，一条 8192 长的序列 bf16 logits 就是 4 GiB，autograd 还要一直留着它。所以要分块跑 lm_head。"}]}
+{"messages": [{"role": "user", "content": "packing 时 position_ids 怎么编号？"}, {"role": "assistant", "content": "每个子序列独立从 0 开始；图像段按 (t,h,w) 展开，之后位置计数只前进 max(h,w)/merge。写错不会报错，只会静默掉点。"}]}
+{"messages": [{"role": "user", "content": "梯度累积的分母该取什么？"}, {"role": "assistant", "content": "整个优化步、跨所有 rank 的监督 token 总数。按 micro-batch 各自的 token 数归一化会让短的 micro-batch 权重偏大。"}]}
+{"messages": [{"role": "user", "content": "<image>图里的圆是什么颜色？"}, {"role": "assistant", "content": "黄色。"}], "images": ["examples/data/demo.png"]}
+{"messages": [{"role": "user", "content": "top-k 蒸馏为什么要用并集？"}, {"role": "assistant", "content": "反向 KL 要惩罚的是学生给了高概率、教师却不认的 token；只取教师 top-k 会把它们直接丢掉，学生反而收不到惩罚。"}]}

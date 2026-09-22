@@ -1,0 +1,2 @@
+{"messages": [{"role": "user", "content": "解释一下 mm_token_type_ids。"}], "chosen": "它逐 token 标记哪些位置是视觉 token，M-RoPE 需要它来切换编号方式；缺了会直接报 ValueError。", "rejected": "它是一个可选字段，不传也没关系。"}
+{"messages": [{"role": "user", "content": "<image>这是什么？"}], "images": ["examples/data/demo.png"], "chosen": "一张 112x112 的合成图：深蓝背景上有一个黄色圆和一条红色竖条。", "rejected": "我看不到图片。"}

@@ -1,0 +1,36 @@
+{"messages": [{"role": "user", "content": "1+1 等于几？把答案写进 \\boxed{}。"}], "solution": "2"}
+{"messages": [{"role": "user", "content": "3 的平方是多少？把答案写进 \\boxed{}。"}], "solution": "9"}
+{"messages": [{"role": "user", "content": "12 除以 4 等于几？把答案写进 \\boxed{}。"}], "solution": "3"}
+{"messages": [{"role": "user", "content": "<image>图里有几个圆？把答案写进 \\boxed{}。"}], "images": ["examples/data/demo.png"], "solution": "1"}
+{"messages": [{"role": "user", "content": "2+3 等于几？把答案写进 \\boxed{}。"}], "solution": "5"}
+{"messages": [{"role": "user", "content": "5+7 等于几？把答案写进 \\boxed{}。"}], "solution": "12"}
+{"messages": [{"role": "user", "content": "8+6 等于几？把答案写进 \\boxed{}。"}], "solution": "14"}
+{"messages": [{"role": "user", "content": "9+9 等于几？把答案写进 \\boxed{}。"}], "solution": "18"}
+{"messages": [{"role": "user", "content": "15+15 等于几？把答案写进 \\boxed{}。"}], "solution": "30"}
+{"messages": [{"role": "user", "content": "10-4 等于几？把答案写进 \\boxed{}。"}], "solution": "6"}
+{"messages": [{"role": "user", "content": "9-2 等于几？把答案写进 \\boxed{}。"}], "solution": "7"}
+{"messages": [{"role": "user", "content": "20-11 等于几？把答案写进 \\boxed{}。"}], "solution": "9"}
+{"messages": [{"role": "user", "content": "100-1 等于几？把答案写进 \\boxed{}。"}], "solution": "99"}
+{"messages": [{"role": "user", "content": "14-9 等于几？把答案写进 \\boxed{}。"}], "solution": "5"}
+{"messages": [{"role": "user", "content": "6 乘以 2 等于几？把答案写进 \\boxed{}。"}], "solution": "12"}
+{"messages": [{"role": "user", "content": "7 乘以 3 等于几？把答案写进 \\boxed{}。"}], "solution": "21"}
+{"messages": [{"role": "user", "content": "4 乘以 4 等于几？把答案写进 \\boxed{}。"}], "solution": "16"}
+{"messages": [{"role": "user", "content": "3 乘以 9 等于几？把答案写进 \\boxed{}。"}], "solution": "27"}
+{"messages": [{"role": "user", "content": "10 乘以 10 等于几？把答案写进 \\boxed{}。"}], "solution": "100"}
+{"messages": [{"role": "user", "content": "20 除以 5 等于几？把答案写进 \\boxed{}。"}], "solution": "4"}
+{"messages": [{"role": "user", "content": "18 除以 3 等于几？把答案写进 \\boxed{}。"}], "solution": "6"}
+{"messages": [{"role": "user", "content": "36 除以 6 等于几？把答案写进 \\boxed{}。"}], "solution": "6"}
+{"messages": [{"role": "user", "content": "50 除以 2 等于几？把答案写进 \\boxed{}。"}], "solution": "25"}
+{"messages": [{"role": "user", "content": "81 除以 9 等于几？把答案写进 \\boxed{}。"}], "solution": "9"}
+{"messages": [{"role": "user", "content": "2 的 3 次方是多少？把答案写进 \\boxed{}。"}], "solution": "8"}
+{"messages": [{"role": "user", "content": "5 的平方是多少？把答案写进 \\boxed{}。"}], "solution": "25"}
+{"messages": [{"role": "user", "content": "4 的平方是多少？把答案写进 \\boxed{}。"}], "solution": "16"}
+{"messages": [{"role": "user", "content": "10 的平方是多少？把答案写进 \\boxed{}。"}], "solution": "100"}
+{"messages": [{"role": "user", "content": "7+6 等于几？把答案写进 \\boxed{}。"}], "solution": "13"}
+{"messages": [{"role": "user", "content": "11+12 等于几？把答案写进 \\boxed{}。"}], "solution": "23"}
+{"messages": [{"role": "user", "content": "6 乘以 6 等于几？把答案写进 \\boxed{}。"}], "solution": "36"}
+{"messages": [{"role": "user", "content": "8 乘以 5 等于几？把答案写进 \\boxed{}。"}], "solution": "40"}
+{"messages": [{"role": "user", "content": "45 除以 5 等于几？把答案写进 \\boxed{}。"}], "solution": "9"}
+{"messages": [{"role": "user", "content": "60 除以 12 等于几？把答案写进 \\boxed{}。"}], "solution": "5"}
+{"messages": [{"role": "user", "content": "13+14 等于几？把答案写进 \\boxed{}。"}], "solution": "27"}
+{"messages": [{"role": "user", "content": "30-7 等于几？把答案写进 \\boxed{}。"}], "solution": "23"}

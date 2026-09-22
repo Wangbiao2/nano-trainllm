@@ -1,0 +1,4 @@
+{"text": "梯度累积把一个大 batch 拆成若干 micro-batch，逐个前向反向，梯度在参数上累加。"}
+{"text": "重要性采样比 exp(logp - logp_old) 在只做一次更新时恒等于 1。"}
+{"text": "KL 的 k3 估计子是 exp(r) - r - 1，其中 r = logp_ref - logp，永远非负。"}
+{"text": "分块跑 LM head 之后，logits 的峰值显存与序列长度无关。"}

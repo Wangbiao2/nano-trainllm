@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nano-trainllm"
+version = "0.1.0"
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+description = "a lightweight multimodal post-training framework built from scratch"
+requires-python = ">=3.10"
+# Developed against torch 2.10.0 / transformers 5.16.0 / peft 0.15.0.  The floors
+# are the versions that first have what this framework actually calls.
+dependencies = [
+    "torch>=2.6.0",        # fsdp2's fully_shard / DTensor
+    "transformers>=5.16.0",# Qwen3.5 is native here (model_type qwen3_5)
+    "peft>=0.14.0",        # inject_adapter_in_model
+    "pillow",
+]
+
+# The rollout is an interface with two implementations; only one of them needs
+# an inference engine, so vLLM is not a dependency of the framework.  mathruler
+# is only pulled in by the `math` reward (symbolic answer grading); `accuracy`
+# and `format` need nothing extra.
+[project.optional-dependencies]
+vllm = ["vllm>=0.8.0"]
+math = ["mathruler"]
+
+[project.scripts]
+nano-trainllm = "nanotrainllm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nanotrainllm*"]
+
+[tool.ruff]
+line-length = 100

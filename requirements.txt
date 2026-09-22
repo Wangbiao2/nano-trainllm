@@ -1,0 +1,11 @@
+# Mirrors the `dependencies` table of pyproject.toml; `pip install -e .` is the
+# supported path and this file is here for readers who look for it first.
+torch>=2.6.0
+transformers>=5.16.0
+peft>=0.14.0
+pillow
+
+# Optional.  `--rollout vllm` only; the HF `generate` backend needs nothing extra.
+#   vllm>=0.8.0
+# Optional.  `--reward-funcs math` only; `accuracy` and `format` need nothing extra.
+#   mathruler
